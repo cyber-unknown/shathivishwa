@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship and College Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: #343a40;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+        
+        .container-content {
+            margin-top: 30px;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Scholarship Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Identify Scholarships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Find Colleges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Calculate Cutoffs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container container-content">
+
+        <!-- Section 1: Identifying Eligible Scholarships -->
+        <div id="section1" class="card">
+            <div class="card-body">
+                <h2 class="card-title">Identifying Eligible Scholarships</h2>
+                <p class="card-text">Explore different types of scholarships and learn how to qualify.</p>
+                <button type="button" class="btn btn-primary" onclick="exploreScholarships()">Explore Scholarships</button>
+            </div>
+        </div>
+
+        <!-- Section 2: Finding the Right College -->
+        <div id="section2" class="card">
+            <div class="card-body">
+                <h2 class="card-title">Finding the Right College</h2>
+                <p class="card-text">Discover colleges that match your preferences and goals.</p>
+                <button type="button" class="btn btn-primary">Find Colleges</button>
+            </div>
+        </div>
+
+        <!-- Section 3: Calculating Cutoffs -->
+        <div id="section3" class="card">
+            <div class="card-body">
+                <h2 class="card-title">Calculating Cutoffs</h2>
+                <p class="card-text">Understand how to calculate cutoff scores for your desired courses.</p>
+                <button type="button" class="btn btn-primary">Calculate Cutoffs</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function exploreScholarships() {
+            // Redirect to students.html
+            window.location.href = 'student.html';
+        }
+    </script>
+
+</body>
+
+</html>
